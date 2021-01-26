@@ -67,9 +67,12 @@ spec:
         - name: PODINFO_UI_MESSAGE
           value: "Hello Ryan"
           value: "another value"
-        - name: PODINFO_UI_MESSAGE
+        - name: PODINFO_UI_MESSAGE2
           value: "Hello Ryan2"
           value: "another value2"
+        - name: PODINFO_UI_MESSAGE
+          value: "Hello Ryan2"
+          value: "another value2"          
         livenessProbe:
           httpGet:
             path: /healthz
