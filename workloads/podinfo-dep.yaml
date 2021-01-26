@@ -25,7 +25,7 @@ spec:
         prometheus.io/port: "9797"
       labels:
         app: podinfo
-    specx:
+    spec:
       initContainers:
       - name: init
         image: alpine:3.10
@@ -63,6 +63,9 @@ spec:
         - name: PODINFO_UI_MESSAGE
           value: "Hello Ryan"
           value: "another value"
+        - name: PODINFO_UI_MESSAGE
+          value: "Hello Ryan2"
+          value: "another value2"
         livenessProbe:
           httpGet:
             path: /healthz
