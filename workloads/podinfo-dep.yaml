@@ -32,6 +32,10 @@ spec:
         command:
         - sleep
         - "1"
+        env: 
+        - name: PODINFO_UI_MESSAGE
+          value: "Hello Ryan2"
+          value: "another value2"        
       containers:
       - name: podinfod
         image: stefanprodan/podinfo:3.1.5
