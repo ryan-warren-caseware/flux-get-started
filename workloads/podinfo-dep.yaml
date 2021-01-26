@@ -60,6 +60,8 @@ spec:
           value: "#34577c"
         - name: PODINFO_UI_COLOR_2
           value: "#34577c"
+        - name: PODINFO_UI_MESSAGE
+          value: "Hello Ryan"
         livenessProbe:
           httpGet:
             path: /healthz
